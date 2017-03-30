@@ -83,3 +83,12 @@ function randomQuote(){
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clickig on the button.
 */
+showHide.addEventListener("click", showHideSecret);
+function showHideSecret(){
+  var secretElem = document.getElementById("freedom");
+  if(secretElem.style.display === "none"){
+    secretElem.style.display = "block";
+  }else{
+    secretElem.style.display = "none";
+  }
+}
